@@ -92,18 +92,6 @@ class KB:
         for i, f in enumerate(set([f.expression for f in self.facts])):
             print(f'\t{i+1}. {f}')
 
-# kb = KB()
-# kb.tell('missile(x)=>weapon(x)')
-# kb.tell('missile(M1)')
-# kb.tell('enemy(x,America)=>hostile(x)')
-# kb.tell('american(West)')
-# kb.tell('enemy(Nono,America)')
-# kb.tell('owns(Nono,M1)')
-# kb.tell('missile(x)&owns(Nono,x)=>sells(West,x,Nono)')
-# kb.tell('american(x)&weapon(y)&sells(x,y,z)&hostile(z)=>criminal(x)')
-# kb.query('criminal(x)')
-# kb.display()
-
 def main():
     kb = KB()
     print("Enter the number of FOL expressions present in KB:")
@@ -122,5 +110,5 @@ main()
 # king(x)&greedy(x)=>evil(x)
 # king(John)
 # greedy(John)
-# evil(x)
 # king(Richard)
+# evil(x)
